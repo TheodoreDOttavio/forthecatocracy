@@ -1,0 +1,7 @@
+# Ignore unneeded files.
+*.swp
+*~
+.project
+*.xls
+*.pdf
+*.zip
