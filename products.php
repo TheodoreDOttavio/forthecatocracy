@@ -23,7 +23,7 @@
 <body>
   <!-- https://www.etsy.com/shop/ForTheCatocracy -->
   <div class="container-fluid">
-    <div id="header"></div>
+    <?php include('_navigation.html') ?>
 
     <!-- Content Body -->
     <div class="container">
