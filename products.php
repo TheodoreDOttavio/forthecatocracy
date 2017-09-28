@@ -28,7 +28,6 @@
     <!-- Content Body -->
     <div class="container">
       <div class="row">
-        <img src="assets/photos/2017051000/2017-05-25-1473-thumb.jpg" />
 
         <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
@@ -37,13 +36,57 @@
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form> -->
 
-        <img src="assets/photos/2017051000/2017-05-25-1473-thumb.jpg" />
+        <?php
+        function getFileList($dir)
+        {
+          // array to hold return value
+          $retval = array();
+
+          // add trailing slash if missing
+          if(substr($dir, -1) != "/") $dir .= "/";
+
+          // open pointer to directory and read list of files
+          $d = @dir($dir) or die("getFileList: Failed opening directory $dir for reading");
+          while(false !== ($entry = $d->read())) {
+            // skip hidden files
+            if($entry[0] == ".") continue;
+            // "name" => "$dir$entry"
+            if(is_dir("$dir$entry")) {
+              $retval[] = array(
+                "name" => "$entry/",
+                "type" => filetype("$dir$entry"),
+                "size" => 0,
+                "lastmod" => filemtime("$dir$entry")
+              );
+            } elseif(is_readable("$dir$entry")) {
+              $retval[] = array(
+                "name" => "$entry",
+                "type" => mime_content_type("$dir$entry"),
+                "size" => filesize("$dir$entry"),
+                "lastmod" => filemtime("$dir$entry")
+              );
+            }
+          }
+          $d->close();
+
+          return $retval;
+        }
+
+        $dirlist = getFileList("assets/photos/");
+        foreach($dirlist as $productdir) {
+          if($productdir['name'] != "gallery/") {
+            $product = getFileList("assets/photos/{$productdir['name']}");
+            foreach($product as $thumb) {
+              if(substr($thumb['name'], -10) == "-thumb.jpg") {
+                // echo "{$thumb['name']}\n";
+                echo "<img src='assets/photos/{$productdir['name']}/{$thumb['name']}' />";
+              }
+            }
+          }
+        }
+        ?>
       </div>
     </div>
-    <div class="container">
-      a thing: <p id="myproducts"></p> and nothing...
-    </div>
-
 
   </div>
 
