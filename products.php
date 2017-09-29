@@ -37,12 +37,10 @@
         </form> -->
 
         <?php
-        function getFileList($dir)
-        {
-          // array to hold return value
+        function getFileList($dir) {
           $retval = array();
 
-          // add trailing slash if missing
+          // add trailing delimiter if needed
           if(substr($dir, -1) != "/") $dir .= "/";
 
           // open pointer to directory and read list of files
@@ -79,7 +77,9 @@
             foreach($product as $thumb) {
               if(substr($thumb['name'], -10) == "-thumb.jpg") {
                 // echo "{$thumb['name']}\n";
-                echo "<img src='assets/photos/{$productdir['name']}/{$thumb['name']}' />";
+                echo "<span class='mx-auto d-block'><a href='productdetail.php?id={$productdir['name']}' >";
+                echo "<img class='rounded' src='assets/photos/{$productdir['name']}/{$thumb['name']}' />";
+                echo "</span></a>";
               }
             }
           }

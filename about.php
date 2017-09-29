@@ -17,13 +17,12 @@
   <link rel="stylesheet" href="assets/stylesheets/catocracy.css" />
 
   <script type="text/javascript" src="assets/javascripts/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/javascripts/catocracy.js"></script>
   <script type="text/javascript" src="assets/javascripts/responsiveslides.min.js"></script>
   <script>
   // Slideshow
   $(function () {
     $("#slider").responsiveSlides({
-      auto: false,
+      auto: true,
       pager: false,
       nav: true,
       speed: 800,
