@@ -27,8 +27,18 @@
 
     <!-- Content Body -->
     <div class="container">
+      <h1>Email</h1>
       <a href="mailto:teddottavio@gmail.com">teddottavio@gmail.com</a>
     </div>
+    <div class="container">
+      <h1>Text Message:</h1>
+      <form action="mailer.php" method="POST">
+        <input type="text" name="clientPhone" value="000 555-1234" />
+        <textarea name="message"></textarea>
+        <br><input type="submit" value="Send" />
+      </form>
+    </div>
+
 
   </div>
 
