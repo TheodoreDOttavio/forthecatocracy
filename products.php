@@ -9,6 +9,7 @@
 
     <!-- Content Body -->
     <div class="container">
+      <h1>Select one to see more images</h1>
       <div class="row">
 
         <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -33,17 +34,11 @@
             // "name" => "$dir$entry"
             if(is_dir("$dir$entry")) {
               $retval[] = array(
-                "name" => "$entry/",
-                "type" => filetype("$dir$entry"),
-                "size" => 0,
-                "lastmod" => filemtime("$dir$entry")
+                "name" => "$entry/"
               );
             } elseif(is_readable("$dir$entry")) {
               $retval[] = array(
-                "name" => "$entry",
-                "type" => mime_content_type("$dir$entry"),
-                "size" => filesize("$dir$entry"),
-                "lastmod" => filemtime("$dir$entry")
+                "name" => "$entry"
               );
             }
           }
