@@ -2,7 +2,7 @@
 // echo("sent from ". $_POST['clientPhone']. "<br>The message is: ". $_POST['message']);
 // mail('7186785933@myboostmobile.com', 'Catocracy-Contact', $_POST['message']);
 
-$gpass = getenv('gpass')."";
+$gpass = getenv('gpass');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -33,7 +33,7 @@ try {
   $mail->Send();
   echo 'Message has been sent';
 } catch (Exception $e) {
-  echo ('<br>Message could not be sent.<br>'. $gpass. "<br>");
+  echo ('<br>Message could not be sent.<br>');
   echo ('Mailer Error: ' . $mail->ErrorInfo);
 }
 ?>
