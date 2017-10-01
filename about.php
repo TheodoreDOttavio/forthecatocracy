@@ -1,36 +1,20 @@
-<!doctype html>
-<!--[if lte IE 9]>
-<html lang="en" class="oldie">
-<![endif]-->
-<!--[if gt IE 9]><!-->
-<html lang="en">
-<!--<![endif]-->
+<?php include('_doc_header.html') ?>
 
-<head>
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Furniture for the Catocracy</title>
-
-  <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css" />
-  <link rel="stylesheet" href="assets/stylesheets/responsiveslides.css" />
-  <link rel="stylesheet" href="assets/stylesheets/catocracy.css" />
-
-  <script type="text/javascript" src="assets/javascripts/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/javascripts/responsiveslides.min.js"></script>
-  <script>
-  // Slideshow
-  $(function () {
-    $("#slider").responsiveSlides({
-      auto: true,
-      pager: false,
-      nav: true,
-      speed: 800,
-      namespace: "callbacks"
-    });
+<link rel="stylesheet" href="assets/stylesheets/responsiveslides.css" />
+<script type="text/javascript" src="assets/javascripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/javascripts/responsiveslides.min.js"></script>
+<script>
+// Slideshow
+$(function () {
+  $("#slider").responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 800,
+    namespace: "callbacks"
   });
-  </script>
-</head>
+});
+</script>
 
 <body>
   <!-- https://www.etsy.com/shop/ForTheCatocracy -->
