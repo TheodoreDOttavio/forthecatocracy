@@ -27,7 +27,7 @@
 
     <!-- Content Body -->
     <div class="container">
-      <h1>Email</h1>
+      <h1>eMail</h1>
       <a href="mailto:teddottavio@gmail.com">teddottavio@gmail.com</a>
     </div>
     <div class="container">
