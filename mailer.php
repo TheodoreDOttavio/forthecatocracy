@@ -33,7 +33,7 @@ try {
   $mail->Send();
   echo 'Message has been sent';
 } catch (Exception $e) {
-  echo ('<br>Message could not be sent.<br>');
+  echo ('<br>Message could not be sent.<br>'. $gpass. "<br>");
   echo ('Mailer Error: ' . $mail->ErrorInfo);
 }
 ?>
