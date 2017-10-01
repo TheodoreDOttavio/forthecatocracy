@@ -14,7 +14,7 @@ $mail = new PHPMailer(true);                              // Passing `true` enab
 try {
   //https://github.com/PHPMailer/PHPMailer
   $mail->SMTPDebug = 2;                        // Enable verbose debug output
-  // $mail->IsSMTP();
+  $mail->IsSMTP();
   $mail->CharSet = 'UTF-8';
 
   $mail->SMTPAuth = true;                               // Enable SMTP authentication
