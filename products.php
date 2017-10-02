@@ -9,7 +9,7 @@
 
     <!-- Content Body -->
     <div class="container">
-      <h1>Select one to see more images</h1>
+      <hr>
       <div class="row">
 
         <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

@@ -7,17 +7,20 @@
 
     <!-- Content Body -->
     <div class="container">
-      <h1>Email</h1>
-      <p><a href="mailto:teddottavio@gmail.com">teddottavio@gmail.com</a>
-    </div>
-    <div class="container">
-      <h1>Txt</h1>
-      <form action="mailer.php" method="POST">
-        <p><input type="text" name="clientPhone" value="000 555-1234" />&nbsp;Your phone number
-        <p><textarea name="message"></textarea>
-        <p><input type="submit" value="Send it" />
-      </form>
-    </div>
+      <hr>
+      <div class="row">
+        <h1>Email</h1>
+        <a href="mailto:teddottavio@gmail.com">teddottavio@gmail.com</a>
+      </div>
+      <hr>
+      <div class="row">
+        <h1>Txt</h1>
+        <form action="mailer.php" method="POST">
+          <br><input type="text" name="clientPhone" value="000 555-1234" />&nbsp;Your phone number
+          <br><textarea name="message" rows="4" cols="80"></textarea>
+          <br><input type="submit" value="Send it" />
+        </form>
+      </div>
   </div>
 </body>
 </html>
