@@ -9,6 +9,9 @@
 
     <!-- Content Body -->
     <div class="container">
+      <div class="row">
+        <h1>Handmade scratching posts<br>for prestigious feline homes.</h1>
+      </div>
       <hr>
       <div class="row">
 

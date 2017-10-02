@@ -61,7 +61,7 @@
       }
       ?>
       <a href='index.php' class='btn btn-md btn-info col-sm-3'>Home</a>
-      <a href='index.php' class='btn btn-md btn-success col-sm-3'>Products</a>
+      <a href='products.php' class='btn btn-md btn-success col-sm-3'>Products</a>
     </div>
   </div>
 </body>
