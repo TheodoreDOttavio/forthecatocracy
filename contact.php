@@ -10,7 +10,7 @@
       <hr>
       <div class="row">
         <h1>Email</h1>
-        <a href="mailto:teddottavio@gmail.com">teddottavio@gmail.com</a>
+        <h2><a href="mailto:teddottavio@gmail.com">teddottavio@gmail.com</a></h2>
       </div>
       <hr>
       <div class="row">
