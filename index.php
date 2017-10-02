@@ -14,12 +14,12 @@
       <div class="row">
         These designs came about after making a few cat scratching posts for friends.
         We wanted all natural fibers instead of carpeting.
-        Next I tipped the post itself back and curved it like a tree base to help your home owner reach out.
+        Next I tipped the post itself back and curved it like a tree base to help your home owner reach out and scratch.
         Instead of attaching the post to a wall, or adding a heavy base I designed a wider base with legs that is a little more stable for clawing.
-        The natural fiber rope is attached with simple U-shaped nails and no glue so it can be replaced.
-        The rear legs are flush to the back wall in case your space is limited or need to sneak them behind another piece of furniture.
+        The natural fiber rope is attached with U-shaped nails (no glue) so that can be replaced after heavy use.
+        The rear legs are flush to the back wall (with a 1" gap for baseboard molding) in case your space is limited or you need to set it behind another piece of furniture.
         Finally the construction follows classic furniture design for added strength and long life.
-        I hope your kitties will enjoy the look and the feel of these in their home!
+        <br>&nbsp;<br>I hope your feline rulers will enjoy the look and the feel of these in their home!
       </div>
       <hr>
       <div class="row">
