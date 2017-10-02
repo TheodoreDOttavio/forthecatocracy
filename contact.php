@@ -23,8 +23,8 @@
         </div>
         <div class="col text-right">
           <form action="mailer.php" method="POST">
-            <b>Your phone number:</b>&nbsp;<input type="text" name="clientPhone" class="col-sm-5" value="000 555-1234" />
-            <br><textarea name="message" rows="4" class="col-sm-12"></textarea>
+            <b>Your phone number:</b>&nbsp;<input type="text" name="clientPhone" class="col-sm-5" value='<?php echo($_GET['clientPhone']); ?>' >
+            <br><textarea name="message" rows="4" class="col-sm-12"><?php echo($_GET['message']); ?></textarea>
             <br><input type="submit" value="Send a txt" class="btn btn-md btn-success col-sm-8" />
           </form>
         </div>
