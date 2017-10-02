@@ -48,7 +48,7 @@
           echo '<h1>Your message has been sent</h1>';
         } catch (Exception $e) {
           echo ('<h1>Message could not be sent</h1>');
-          echo ('<h2>Error: ' . $mail->ErrorInfo . "</h2>");
+          // echo ('<h2>Error: ' . $mail->ErrorInfo . "</h2>");
           $msg = htmlspecialchars($_POST['message']);
           $phn = htmlspecialchars($_POST['clientPhone']);
           echo ("<a href='contact.php?message={$msg}&clientPhone={$phn}' class='btn btn-md btn-warning col-sm-3'>Back</a>");
