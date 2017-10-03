@@ -12,11 +12,7 @@
 
 <p class="small text-center"><b>A perfect addition<br>for a sunny window.</b>
 
-<p class="small">Solid wood construction with replaceable sisal fiber rope.
-The front scratching post has a slight curve to help your cat stretch out and claw away.
-
-
-<p class="small">Legs are easily removed and secured strong enough to hold very heavy cats.
+<?php include("_description.php"); ?>
 I have pressed all my weight on the top to stress test it. It does support a good 20lbs on the front corners without tipping. This is probably best for a home with a single smaller cat that won't throw their food all over the place.
 
 <p class="lead">Dimensions:</p>
@@ -26,8 +22,4 @@ I have pressed all my weight on the top to stress test it. It does support a goo
   <br>26" x 16" top
   <br>22 3/4" wide (outer edges of the back legs)
   <br>26" from the back edge to the bottom front of the scratching post.
-</p>
-
-<p class="small text-center">
-  This was built in a cat free environment to ensure your home owner will be the first to mark it as their personal piece.
 </p>

@@ -10,11 +10,7 @@
   $125
 </p>
 
-<p class="small">Solid wood construction with replaceable sisal fiber rope.
-The front scratching post has a slight curve to help your cat stretch out and claw away.
-
-<p class="small">Legs are easily removed and secured strong enough to hold very heavy cats.
-I have pressed all my weight on the top to stress test it. It is built to last!
+<?php include("_description.php"); ?>
 
 <p class="lead">Dimensions:</p>
 
@@ -23,8 +19,4 @@ I have pressed all my weight on the top to stress test it. It is built to last!
   <br>16 1/4" x 12" top
   <br>23 1/4" wide (outer edges of the back legs)
   <br>26" from the back edge to the bottom front of the scratching post.
-</p>
-
-<p class="small text-center">
-  This was built in a cat free environment to ensure your home owner will be the first to mark it as their personal piece.
 </p>
