@@ -51,15 +51,15 @@
             return $retval;
           }
 
-          $dirlist = getFileList("assets/photos/");
+          $dirlist = getFileList("assets/photos/cat-scratching-post-kratzbaum/");
           foreach($dirlist as $productdir) {
             if($productdir['name'] != "gallery/") {
-              $product = getFileList("assets/photos/{$productdir['name']}");
+              $product = getFileList("assets/photos/cat-scratching-post-kratzbaum/{$productdir['name']}");
               foreach($product as $thumb) {
                 if(substr($thumb['name'], -10) == "-thumb.jpg") {
                   // echo "{$thumb['name']}\n";
                   echo "<span class='mx-auto d-block'><a href='productdetail.php?id={$productdir['name']}' >";
-                  echo "<img class='rounded' src='assets/photos/{$productdir['name']}/{$thumb['name']}' />";
+                  echo "<img class='rounded' src='assets/photos/cat-scratching-post-kratzbaum/{$productdir['name']}/{$thumb['name']}' />";
                   echo "</span></a>";
                 }
               }

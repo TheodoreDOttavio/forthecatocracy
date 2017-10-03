@@ -6,7 +6,7 @@
 // Slideshow
 $(function () {
   $("#slider").responsiveSlides({
-    auto: true,
+    auto: false,
     pager: false,
     nav: true,
     speed: 1200,
@@ -14,6 +14,7 @@ $(function () {
   });
 });
 </script>
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 <body>
   <?php
@@ -54,10 +55,10 @@ $(function () {
         <div class="col text-center">
         <!-- https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=ieujovNO8_KBDha0tx64a8jxDKUcXBUPnpXcVACxuIO2jCh2fx498fjWv8e&dispatch=5885d80a13c0db1f8e263663d3faee8d795bb2096d7a7643a72ab88842aa1f54&rapidsState=Merchant__ButtonDesignerFlow___StateButtonDesignerStart&rapidsStateSignature=962f6fbd187db52ec473a404831346aa974d3511 -->
         <?php
-        $dirlist = getFileList("assets/photos/{$_GET['id']}");
+        $dirlist = getFileList("assets/photos/cat-scratching-post-kratzbaum/{$_GET['id']}");
         foreach($dirlist as $displayHtml) {
           if(substr($displayHtml['name'], -4) == ".php") {
-            include("assets/photos/" . $_GET['id'] . "/" . $displayHtml['name']);
+            include("assets/photos/cat-scratching-post-kratzbaum/" . $_GET['id'] . "/" . $displayHtml['name']);
           }
         }
         ?>
@@ -68,10 +69,11 @@ $(function () {
           <ul class="rslides" id="slider">
 
         <?php
-        $dirlist = getFileList("assets/photos/{$_GET['id']}");
+        $dirlist = getFileList("assets/photos/cat-scratching-post-kratzbaum/{$_GET['id']}");
         foreach($dirlist as $displayImage) {
           if(substr($displayImage['name'], -10) != "-thumb.jpg" && substr($displayImage['name'], -4) == ".jpg") {
-            echo "<li><img src='assets/photos/{$_GET['id']}{$displayImage['name']}' /></li>";
+            echo "<li><img src='assets/photos/cat-scratching-post-kratzbaum/{$_GET['id']}{$displayImage['name']}' alt='Furniture for the Catocracy, cat scratching post, scratcher, kratzbaum' />";
+            echo "<p class='clearcaption text-right'><a data-pin-do='buttonBookmark' href='https://www.pinterest.com/pin/create/button/'></a></p></li>";
           }
         }
         ?>
